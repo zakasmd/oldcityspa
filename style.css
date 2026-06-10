@@ -241,34 +241,36 @@ header.scrolled .nav-toggle span { background-color: var(--text-dark); }
   overflow: hidden;
 }
 
-/* High-quality background image */
+/* Hero background — local business photo */
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1920&q=90');
+  background-image: url('images/anasehife.png');
   background-size: cover;
-  background-position: center 40%;
+  background-position: center center;
   transform: scale(1.04);
   transition: transform 8s ease-out;
+  /* Slight blur softens low-res artifacts without hiding the image */
+  filter: blur(1px) brightness(0.88);
 }
 
 .hero-bg.loaded { transform: scale(1); }
 
-/* Sharp, clean dark overlay — no blur */
+/* Dark overlay — slightly heavier to mask quality */
 .hero-overlay-dark {
   position: absolute;
   inset: 0;
-  background: rgba(10, 8, 6, 0.62);
+  background: rgba(8, 6, 4, 0.68);
   z-index: 1;
 }
 
-/* Directional gradient — brighter at center */
+/* Gradient: dark vignette edges, clear centre */
 .hero-overlay-gradient {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 80% at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%),
-    linear-gradient(to top, rgba(10,8,6,0.9) 0%, rgba(10,8,6,0) 50%);
+    radial-gradient(ellipse 65% 70% at 50% 45%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 100%),
+    linear-gradient(to top, rgba(8,6,4,0.92) 0%, rgba(8,6,4,0) 55%);
   z-index: 2;
 }
 
