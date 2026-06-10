@@ -1,6 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Sticky Header on Scroll
+  // Sticky Header on Scroll & Hero Background Zoom effect
   const header = document.querySelector('header');
+  const heroBg = document.querySelector('.hero-bg');
+  
+  if (heroBg) {
+    // Add loaded class to scale image down smoothly after initial load
+    setTimeout(() => {
+      heroBg.classList.add('loaded');
+    }, 150);
+  }
+
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
       header.classList.add('scrolled');

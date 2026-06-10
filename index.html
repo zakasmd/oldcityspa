@@ -32,26 +32,47 @@
     </div>
   </header>
 
-  <!-- Hero Section — CSS Gradient Design (no low-quality image) -->
+  <!-- Hero Section -->
   <section id="home" class="hero-section">
-    <div class="hero-bg-overlay"></div>
+    <!-- Background image -->
+    <div class="hero-bg"></div>
+    <!-- Layered overlays for depth without blur -->
+    <div class="hero-overlay-dark"></div>
+    <div class="hero-overlay-gradient"></div>
+    <!-- Decorative gold line accents -->
+    <div class="hero-line hero-line-left"></div>
+    <div class="hero-line hero-line-right"></div>
     <div class="hero-content">
-      <span class="hero-subtitle">Premium Wellness Oasis · Baku</span>
+      <div class="hero-badge-top">✦ &nbsp; Premium Wellness Oasis &nbsp; ✦</div>
       <h1 class="hero-title">Old City Spa</h1>
-      <p class="hero-slogan">"Relax. Recharge. Renew."</p>
-      <p class="hero-desc">Professional massage therapy in the heart of Icheri Sheher. Escape the city, restore your body and mind.</p>
+      <div class="hero-divider"><span></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#D8C28A" stroke-width="1"/><path d="M12 8V16M8 12H16" stroke="#D8C28A" stroke-width="1" stroke-linecap="round"/></svg><span></span></div>
+      <p class="hero-slogan">Relax. Recharge. Renew.</p>
+      <p class="hero-desc">Professional massage therapy in the heart of Icheri Sheher.<br>Escape the city — restore your body and mind.</p>
       <div class="hero-btns">
         <a href="https://wa.me/994505119437" target="_blank" class="btn btn-whatsapp" id="heroWhatsapp">
-          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.73-1.464L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.863-9.864.001-2.637-1.03-5.116-2.905-6.993C16.255 1.87 13.78 .84 11.146.84 5.71.84 1.284 5.26 1.281 10.7c-.001 1.748.46 3.453 1.334 4.978l-.993 3.626 3.714-.974c1.516.826 3.09 1.261 4.722 1.261zm10.37-7.4c-.267-.134-1.579-.78-1.823-.867-.243-.088-.421-.132-.599.135-.177.266-.687.867-.843 1.044-.155.178-.311.2-.578.066-.267-.134-1.129-.417-2.15-1.328-.793-.707-1.33-1.58-1.486-1.847-.156-.267-.017-.411.116-.544.12-.12.267-.311.401-.466.133-.156.177-.267.266-.444.089-.178.045-.333-.022-.466-.067-.134-.599-1.446-.821-1.977-.217-.523-.454-.452-.62-.452-.16-.008-.344-.01-.527-.01-.184 0-.482.07-.735.344-.253.277-.965.943-.965 2.298 0 1.356.985 2.663 1.124 2.85.138.188 1.94 2.962 4.699 4.152.656.283 1.17.452 1.57.579.66.21 1.261.18 1.737.109.53-.08 1.579-.646 1.801-1.27.222-.624.222-1.157.155-1.27-.066-.112-.243-.178-.511-.312z"/></svg>
+          <!-- Clean WhatsApp icon -->
+          <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.003 2.667C8.639 2.667 2.667 8.639 2.667 16c0 2.338.622 4.629 1.803 6.641L2.667 29.333l6.875-1.776A13.276 13.276 0 0016.003 29.333C23.361 29.333 29.333 23.361 29.333 16S23.361 2.667 16.003 2.667zm0 2.4c5.843 0 10.597 4.754 10.597 10.599 0 5.843-4.754 10.597-10.597 10.597a10.56 10.56 0 01-5.366-1.461l-.385-.232-3.996 1.032 1.063-3.876-.256-.4A10.554 10.554 0 015.406 16c0-5.843 4.754-10.599 10.597-10.599zM11.93 10.4c-.192 0-.506.072-.771.36-.266.287-1.016 1.002-1.016 2.437 0 1.437 1.04 2.826 1.184 3.02.144.192 2.024 3.185 4.977 4.34 2.953 1.155 2.953.771 3.487.723.534-.048 1.726-.703 1.967-1.386.24-.68.24-1.266.167-1.386-.072-.12-.265-.193-.554-.337-.29-.144-1.727-.856-1.993-.953-.265-.096-.457-.144-.65.144-.193.289-.746.953-.915 1.147-.168.192-.337.217-.626.072-.29-.144-1.225-.453-2.335-1.444-.863-.77-1.448-1.72-1.616-2.01-.168-.288-.018-.446.126-.59.13-.128.29-.337.434-.505.144-.169.193-.289.29-.482.097-.193.049-.36-.024-.505-.073-.144-.648-1.589-.895-2.17-.24-.567-.486-.48-.65-.48l-.556-.01z"/>
+          </svg>
           Book on WhatsApp
         </a>
-        <a href="#location" class="btn btn-secondary" id="heroLocation">View Location</a>
+        <a href="#location" class="btn btn-secondary" id="heroLocation">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          View Location
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="hero-stat-num">5+</span><span class="hero-stat-label">Treatments</span></div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat"><span class="hero-stat-num">100%</span><span class="hero-stat-label">Natural Oils</span></div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat"><span class="hero-stat-num">24/7</span><span class="hero-stat-label">Available</span></div>
       </div>
     </div>
-    <!-- Decorative floating orbs -->
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-orb hero-orb-3"></div>
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+    </div>
   </section>
 
   <!-- About Us Section -->
