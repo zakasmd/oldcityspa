@@ -250,27 +250,27 @@ header.scrolled .nav-toggle span { background-color: var(--text-dark); }
   background-position: center center;
   transform: scale(1.04);
   transition: transform 8s ease-out;
-  /* Slight blur softens low-res artifacts without hiding the image */
-  filter: blur(1px) brightness(0.88);
+  /* Subtle blur only to soften any pixelation */
+  filter: blur(0.5px) brightness(0.95);
 }
 
 .hero-bg.loaded { transform: scale(1); }
 
-/* Dark overlay — slightly heavier to mask quality */
+/* Dark overlay — lighter so image shows through */
 .hero-overlay-dark {
   position: absolute;
   inset: 0;
-  background: rgba(8, 6, 4, 0.68);
+  background: rgba(8, 6, 4, 0.42);
   z-index: 1;
 }
 
-/* Gradient: dark vignette edges, clear centre */
+/* Gradient: soft vignette, image visible at centre */
 .hero-overlay-gradient {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 65% 70% at 50% 45%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 100%),
-    linear-gradient(to top, rgba(8,6,4,0.92) 0%, rgba(8,6,4,0) 55%);
+    radial-gradient(ellipse 65% 70% at 50% 45%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%),
+    linear-gradient(to top, rgba(8,6,4,0.75) 0%, rgba(8,6,4,0) 55%);
   z-index: 2;
 }
 
