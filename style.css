@@ -159,17 +159,22 @@ header.scrolled .nav-container {
 }
 
 .logo {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  color: white;
+  display: flex;
+  align-items: center;
   transition: var(--transition-fast);
   flex-shrink: 0;
 }
 
-header.scrolled .logo { color: var(--text-dark); }
-.logo span { color: var(--primary-gold); }
+.logo img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Adjust logo size slightly when scrolled for a tighter header */
+header.scrolled .logo img {
+  height: 40px;
+}
 
 .nav-menu {
   display: flex;
@@ -762,13 +767,15 @@ footer {
 }
 
 .footer-logo {
-  font-family: var(--font-serif);
-  font-size: 1.7rem;
-  color: white;
   margin-bottom: 1.25rem;
+  display: block;
 }
 
-.footer-logo span { color: var(--primary-gold); }
+.footer-logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
 .footer-col h3 { color: white; font-size: 1.1rem; margin-bottom: 1.5rem; }
 
 .footer-links {
